@@ -21,7 +21,7 @@ showBoard = unlines . map showRow
 {-
     Apresentação do tabuleiro, mostrando uma peça em posições ocupadas ou " " em
   espaços vazios
-}-
+-}
 
 --           ' '       showPiece         (Square -> Char)
 -- maybe :: Char -> (Piece -> Char) -> (Maybe Piece -> Char)
@@ -40,7 +40,7 @@ data PType = Pawn | Knight | Bishop | Rook | Queen | King deriving (Show)
     Implementação das peças no tabuleiro utilizando a notação de Forsyth-Edward
       *Peças brancas em MAIUSCULAS "PNBRQK"
       *Peças pretas  em minusculas "pnbrqk"
-}-
+-}
 
 showPiece :: Piece -> Char
 showPiece (Piece White Pawn)   = 'P'
